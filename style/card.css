@@ -1,6 +1,71 @@
+html, body{
+  background-color: #bdc3c7;
+}
+
 .card{
+  display: flex;
+  flex-direction: column;
   width: 200px;
   height: 300px;
-  background-color: #bdc3c7;
+  background-color: white;
   border-radius: 10px;
+  border: 2px solid white;
+  align-items: center;
+}
+
+.card .header{
+  z-index: 100;
+  border-radius: 10px 10px 0 0;
+  width: 190px;
+  background-color: #e67e22;
+  height: 20px;
+  padding: 5px;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.card .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 240px;
+}
+
+.card .img{
+  width: 100px;
+  height: 140px;
+}
+
+.card .body{
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  width: 190px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  font-size: .8em;
+  padding: 5px;
+}
+
+.card .footer{
+  background-color: #e67e22;
+  border-radius: 0 0 10px 10px;
+  height: 20px;
+  width: 190px;
+  padding: 5px;
+  z-index: 100;
+  color: #ecf0f1;
+  text-align: center;
+  position: relative;
+}
+
+.card .footer .badgeCost{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gold;
+  color: black;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
