@@ -14,3 +14,9 @@ html, body{
   padding: 20px;
   flex-wrap: wrap;
 }
+
+#pick{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
