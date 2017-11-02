@@ -1,8 +1,8 @@
 class MoneyCard extends Card{
     private value:number;
 
-    constructor(costParam:number, textHeaderParam:string, textFooterParam:string, valueParam:number){
-        super(costParam, textHeaderParam, textFooterParam);
+    constructor(divContainer:HTMLElement, costParam:number, textHeaderParam:string, textFooterParam:string, valueParam:number){
+        super(divContainer, costParam, textHeaderParam, textFooterParam);
         this.value = valueParam;
 
         const img:HTMLImageElement = document.createElement("img");

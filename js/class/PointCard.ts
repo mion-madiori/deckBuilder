@@ -1,8 +1,8 @@
 class PointCard extends Card{
   private point:number
 
-  constructor(costParam:number, textHeaderParam:string, textFooterParam:string, pointParam:number){
-    super(costParam, textHeaderParam, textFooterParam);
+  constructor(divContainer:HTMLElement, costParam:number, textHeaderParam:string, textFooterParam:string, pointParam:number){
+    super(divContainer, costParam, textHeaderParam, textFooterParam);
     this.point = pointParam;
 
     const imgPoint:HTMLImageElement = document.createElement('img');

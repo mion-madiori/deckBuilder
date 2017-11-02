@@ -2,7 +2,7 @@ class Card {
   protected cost:number;
   protected container:HTMLElement;
 
-  constructor(costParam:number, textHeaderParam:string, textFooterParam:string) {
+  constructor(divContainer:HTMLElement, costParam:number, textHeaderParam:string, textFooterParam:string) {
     this.cost = costParam;
 
     const card = document.createElement('div');
@@ -32,7 +32,7 @@ class Card {
     card.appendChild(this.container);
     card.appendChild(footer);
 
-    document.body.appendChild(card);
+    divContainer.appendChild(card);
   }
 
   get getCost() {

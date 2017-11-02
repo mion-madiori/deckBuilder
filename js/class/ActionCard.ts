@@ -1,6 +1,6 @@
 class ActionCard extends Card {
-    constructor(cost, textHeader, textFooter, imgParam) {
-        super(cost, textHeader, textFooter);
+    constructor(divContainer:HTMLElement, cost:number, textHeader:string, textFooter:string, imgParam:string) {
+        super(divContainer, cost, textHeader, textFooter);
 
         const img:HTMLImageElement = document.createElement("img");
         const body:HTMLElement = document.createElement("article");

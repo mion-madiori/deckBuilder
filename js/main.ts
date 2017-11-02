@@ -1,5 +1,5 @@
 (()=>{
-  factory.mario();
-  factory.money();
-  factory.point();
+  factory.marioPlayer();
+  factory.moneyPlayer();
+  factory.pointPlayer();
 })();
