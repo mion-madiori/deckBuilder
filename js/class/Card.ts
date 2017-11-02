@@ -1,12 +1,15 @@
 class Card {
-  constructor(costParam, textHeaderParam, textFooterParam) {
+  protected cost:number;
+  protected container:HTMLElement;
+
+  constructor(costParam:number, textHeaderParam:string, textFooterParam:string) {
     this.cost = costParam;
 
     const card = document.createElement('div');
 
     const textHeader = document.createTextNode(textHeaderParam);
     const textFooter = document.createTextNode(textFooterParam);
-    const textCost = document.createTextNode(costParam);
+    const textCost = document.createTextNode(`${costParam}`);
 
     const header = document.createElement('header');
     this.container = document.createElement('div');
