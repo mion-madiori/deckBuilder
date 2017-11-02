@@ -10,6 +10,8 @@
   position: relative;
   top: 0;
   transition: .3s all;
+  margin-left: 10px;  
+  margin-bottom: 10px;
 }
 
 .card:hover{

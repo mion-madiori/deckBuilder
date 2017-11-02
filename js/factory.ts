@@ -3,9 +3,13 @@ const table = document.getElementById('table');
 
 const factory = {
     marioPlayer: () => new ActionCard(player, 3, "Mario", "Action", "img/mario.png"),
-    moneyPlayer: () => new MoneyCard(player, 2, "Monaie", "Argent", 3),
+    money1Player: () => new MoneyCard(player, 1, "Monaie", "Argent", 1),
+    money2Player: () => new MoneyCard(player, 2, "Monaie", "Argent", 2),
+    money3Player: () => new MoneyCard(player, 3, "Monaie", "Argent", 3),
     pointPlayer: () => new PointCard(player, 2, "3 points", "Point", 3),
     marioTable: () => new ActionCard(table, 3, "Mario", "Action", "img/mario.png"),
-    moneyTable: () => new MoneyCard(table, 2, "Monaie", "Argent", 3),
+    money1Table: () => new MoneyCard(player, 1, "Monaie", "Argent", 1),
+    money2Table: () => new MoneyCard(player, 2, "Monaie", "Argent", 2),
+    money3Table: () => new MoneyCard(player, 3, "Monaie", "Argent", 3),
     pointTable: () => new PointCard(table, 2, "3 points", "Point", 3)
 }
