@@ -1,10 +1,8 @@
 (()=>{
-  for (let i = 0; i < 5; i++) {
-    factory.pickPlayer();
-  }
+  let baseDeck:Array<any> = [];
 
   for (let i = 0; i < 5; i++) {
-    factory.money1Player();   
+    factory.pickPlayer();
   }
 
   let me:Player = {
@@ -18,4 +16,8 @@
   console.log(rule.isSatisfiedBy(me));
 
   console.log(rule.or(new GameOverIfPointsEqual50()).isSatisfiedBy(me));
+
+  let game = new Game();
+
+  game.startGame();
 })();
