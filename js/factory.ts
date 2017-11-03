@@ -1,4 +1,4 @@
-const player = document.getElementById('player');
+const player = document.getElementById('game');
 const table = document.getElementById('table');
 const pick = document.getElementById('pick');
 

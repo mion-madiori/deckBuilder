@@ -10,13 +10,19 @@ html, body{
 
 #player{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 20px;
+}
+
+#player #game{
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#pick{
+#player #pick{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 220px;
 }
